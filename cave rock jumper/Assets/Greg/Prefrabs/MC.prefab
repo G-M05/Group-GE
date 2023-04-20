@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4570412544631840905}
   - component: {fileID: 4570412544631840904}
   - component: {fileID: 4570412544631840911}
+  - component: {fileID: 7787835938927053669}
   m_Layer: 0
   m_Name: MC
   m_TagString: Player
@@ -155,3 +156,18 @@ MonoBehaviour:
     m_Bits: 256
   checkRadius: 0.2
   maxJumpCount: 2
+--- !u!114 &7787835938927053669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4570412544631840910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b045cd514ad1a4899b2b4442e66f32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCount: 0
+  maxHealth: 0
+  currentHealth: 0
