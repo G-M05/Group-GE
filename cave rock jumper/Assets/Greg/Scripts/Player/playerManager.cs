@@ -19,7 +19,7 @@ public class playerManager : MonoBehaviour
     {
         switch (obj.tag)
         {
-            case "Currency":
+            case "money":
                 coinCount++;
                 return true;
             case "speed+":

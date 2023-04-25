@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -4640,8 +4640,8 @@ TextureImporter:
       mainlev_build_62: -1182034945
       mainlev_build_167: 281341499
       mainlev_build_80: -2019907777
-      mainlev_build_158: -2690195
       mainlev_build_20: 1078963231
+      mainlev_build_158: -2690195
       mainlev_build_74: 342689683
       mainlev_build_175: -636825926
       mainlev_build_3: -1018144879
@@ -4660,13 +4660,13 @@ TextureImporter:
       mainlev_build_44: -1397954662
       mainlev_build_22: -517139534
       mainlev_build_42: -1546712128
-      mainlev_build_185: 738645253
       mainlev_build_56: 941239744
+      mainlev_build_185: 738645253
       mainlev_build_129: -549022504
       mainlev_build_13: 720444948
       mainlev_build_35: 1085267010
-      mainlev_build_173: 2109509719
       mainlev_build_103: 1094176749
+      mainlev_build_173: 2109509719
       mainlev_build_120: -1168861276
       mainlev_build_61: 1349096688
       mainlev_build_176: 1596797547
@@ -4761,9 +4761,10 @@ TextureImporter:
       mainlev_build_36: -1094893152
       mainlev_build_79: 95489598
       mainlev_build_164: -595784222
-      mainlev_build_169: -1851773303
       mainlev_build_70: 1607650761
+      mainlev_build_143: 1495488811
       mainlev_build_91: -93737385
+      mainlev_build_169: -1851773303
       mainlev_build_187: -1611781515
       mainlev_build_82: 271079305
       mainlev_build_68: 431653840
@@ -4772,7 +4773,6 @@ TextureImporter:
       mainlev_build_144: -1977994880
       mainlev_build_0: 1641466828
       mainlev_build_153: -434859707
-      mainlev_build_143: 1495488811
       mainlev_build_156: -1403321095
       mainlev_build_10: -650741288
       mainlev_build_200: -210186482
