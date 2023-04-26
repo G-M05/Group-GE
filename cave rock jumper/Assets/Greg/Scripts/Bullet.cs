@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    //checks to see if bullet colides with something if it does the bullet gets destroyed
-    private void OnCollisionEnter2D(Collision2D collision)
+    public GameObject bullets;
+    
+    private void Update()
     {
-        
-        // Enemies to tak damage
-        if(collision.gameObject.TryGetComponent<EnemyAi>(out EnemyAi enemyComponent))
+        if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            enemyComponent.TakeDamage(1);
+            Debug.Log("bullet");
+            Instantiate(bullets, gameObject.transform.position, Quaternion.identity);
         }
-        Destroy(gameObject); //destry bullet in all cases
     }
 }
