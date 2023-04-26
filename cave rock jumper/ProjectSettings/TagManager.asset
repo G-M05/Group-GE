@@ -8,7 +8,7 @@ TagManager:
   - Currency
   - speed+
   - Boss
-  - money
+  - jump+
   layers:
   - Default
   - TransparentFX

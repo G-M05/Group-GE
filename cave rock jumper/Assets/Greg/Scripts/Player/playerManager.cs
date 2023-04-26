@@ -19,13 +19,17 @@ public class playerManager : MonoBehaviour
     {
         switch (obj.tag)
         {
-            case "money":
+            case "Currency":
                 coinCount++;
                 return true;
             case "speed+":
                 PlayerMovement.SpeedPowerUp();
                 //call function here
                 return true;
+            case "jump+":
+                PlayerMovement.JumpPowerUp();
+                return true;
+            
             default:
                 Debug.Log("Item tag or reference not set.");
                 return false;

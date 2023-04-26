@@ -22,7 +22,7 @@ public class pickUp : MonoBehaviour
                 if(pickedUp)
                 {
                     Destroy(gameObject);
-                    Debug.Log("coin");
+                    
                 }
 
             }

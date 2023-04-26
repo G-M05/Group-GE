@@ -14,11 +14,25 @@ public class EnemyAi : MonoBehaviour
     //set the speed of our enemy
     public float speed;
 
-   
+
+    [SerializeField] float health, maxHealth = 3f;
+    private void Start()
+    {// Enemy will have full health everytime the game starts
+        health = maxHealth;
+    }
+    public void TakeDamage(float damageAmount)
+    {
+        health -= damageAmount; // 3->2->2 ->1 ->0 = Enemy has died
+        if(health <=0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Update()
     {
         
-
+        // follows player
         if(Vector2.Distance(transform.position, player.position) < 5f)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
@@ -30,7 +44,7 @@ public class EnemyAi : MonoBehaviour
        
     }
 
-
+    // moves between two points if no player is detected
     void MoveToNextPoint()
     {
         //set and get a goal point ased off out lists index

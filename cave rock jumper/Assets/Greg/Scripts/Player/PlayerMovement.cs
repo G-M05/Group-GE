@@ -109,6 +109,16 @@ public class PlayerMovement : MonoBehaviour
         StartCoroutine(PowerUpSpeed());
     }
 
+    IEnumerator PowerUpJump()
+    {
+        jumpForce = 700;
+        yield return new WaitForSeconds(5);
+        jumpForce = 300;
+    }
+    public void JumpPowerUp()
+    {
+        StartCoroutine(PowerUpJump());
+    }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
