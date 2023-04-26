@@ -8,7 +8,7 @@ public class bulletDestroy : MonoBehaviour
     //checks to see if bullet colides with something if it does the bullet gets destroyed
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("spawn");
+        
         // Enemies to tak damage
         if (collision.gameObject.TryGetComponent<EnemyAi>(out EnemyAi enemyComponent))
         {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAi : MonoBehaviour
 {
     public Transform player;
+    public bool canFollowPlayer = true;
     //Reference to waypoints
     public List<Transform> Points;
     //create an int that will represent our indexed transforms in our list
@@ -33,12 +34,18 @@ public class EnemyAi : MonoBehaviour
     {
         
         // follows player
-        if(Vector2.Distance(transform.position, player.position) < 5f)
+        if(Vector2.Distance(transform.position, player.position) < 5f && canFollowPlayer)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
         else
         {
+
+            if (Vector2.Distance(transform.position, player.position) > 6.5f)
+            {
+                canFollowPlayer = true;
+            }
+            
             MoveToNextPoint();
         }
        

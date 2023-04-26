@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
+    public EnemyAi hit;
     public playerManager currenthealth;
     public int damage;
     // Start is called before the first frame update
     void Start()
     {
-        
+        hit = GetComponent<EnemyAi>();
         currenthealth = GameObject.FindGameObjectWithTag("Player").GetComponent<playerManager>();
     }
 
@@ -21,6 +22,7 @@ public class DamagePlayer : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             currenthealth.TakeDamage(damage);
+            hit.canFollowPlayer = false;
         }
         
     }
