@@ -18,4 +18,5 @@ public class bulletDestroy : MonoBehaviour
         }
         Destroy(gameObject); //destry bullet in all cases
     }
+    
 }

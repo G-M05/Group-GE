@@ -9,6 +9,7 @@ TagManager:
   - speed+
   - Boss
   - jump+
+  - wall
   layers:
   - Default
   - TransparentFX
