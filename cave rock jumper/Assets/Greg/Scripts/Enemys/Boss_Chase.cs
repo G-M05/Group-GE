@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Boss_Chase : StateMachineBehaviour
 {
-    
+    public float attackRange = 10f;
     // a box to store the player transform information
     Transform player;
     //a box that stores the bosses rigidbody
@@ -42,6 +42,12 @@ public class Boss_Chase : StateMachineBehaviour
         //tell our rb to move to the newPos
         rb.MovePosition(newPos);
 
+        if (Vector2.Distance(player.position, rb.position) <= attackRange)
+        {
+            //attack
+            animator.SetTrigger("Melee");
+        }
+
         //check the distance betweeen tthe boss and player set a trigger to start an attack
         float distance = Vector2.Distance(player.position, rb.position);
         
@@ -69,7 +75,7 @@ public class Boss_Chase : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        animator.ResetTrigger("Melee");
     }
 
     

@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumpCount;
 
     private Rigidbody2D rb;
-    private bool facingRight = true;
+    public bool facingRight = true;
     private float moveDirection;
     private bool isJumping = false;
     private bool isGrounded;

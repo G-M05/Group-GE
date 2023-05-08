@@ -118,4 +118,15 @@ public class BossBehavior : MonoBehaviour
             PlayerManager.TakeDamage(20);
         }
     }
+    public void MeleeAttack( Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            PlayerManager.TakeDamage(20);
+        }
+    }
+    public void TakeDamage(int damage)
+    {
+        bossHealth -= damage;
+    }
 }
