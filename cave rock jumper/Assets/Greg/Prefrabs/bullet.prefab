@@ -115,7 +115,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c6263ae870589419c498db65c68f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 --- !u!50 &6688192756244401760
+=======
+  bulletSpeed: 1
+  rb: {fileID: 9203755400979830300}
+--- !u!50 &9203755400979830300
+>>>>>>> Stashed changes
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
