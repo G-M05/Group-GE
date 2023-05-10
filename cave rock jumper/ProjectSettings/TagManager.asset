@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - MovingPlatform
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -39,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1873955239
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4180782153
     locked: 0
