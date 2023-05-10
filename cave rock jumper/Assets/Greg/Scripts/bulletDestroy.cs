@@ -16,10 +16,6 @@ public class bulletDestroy : MonoBehaviour
             enemyComponent.TakeDamage(1);
 
         }
-<<<<<<< HEAD
-
-
-
         else if (collision.gameObject.TryGetComponent<BossBehavior>(out BossBehavior bossComponent))
         {
             bossComponent.TakeDamage(1);
@@ -29,8 +25,6 @@ public class bulletDestroy : MonoBehaviour
         Destroy(gameObject); //destry bullet in all cases
 
 
-=======
-        Destroy(gameObject); //destry bullet in all cases
->>>>>>> parent of a69814c (yea)
+
     }
 }
