@@ -29,12 +29,15 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-7:
       value: 5b50570550010f0f0b0d0a2143735a4445161a7c2d717435757a1f62b3e4323d
       flags: 0
+<<<<<<< HEAD
     RecentlyUsedSceneGuid-8:
       value: 00540c5457545f0d5959542612715944134e4b2b287172667978446abab83039
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5a0257035d515f08095a5520132659444f164a7e787d72607e7d4d66b3e2673d
       flags: 0
+=======
+>>>>>>> parent of a69814c (yea)
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
