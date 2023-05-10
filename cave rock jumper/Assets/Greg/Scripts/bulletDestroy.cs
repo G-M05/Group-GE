@@ -9,7 +9,7 @@ public class bulletDestroy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        // Enemies to tak damage
+        // Enemies to take damage
         if (collision.gameObject.TryGetComponent<EnemyAi>(out EnemyAi enemyComponent))
         {
 

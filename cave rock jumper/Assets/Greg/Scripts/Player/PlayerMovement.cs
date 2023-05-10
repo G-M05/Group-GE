@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private int jumpCount;
 
-
+    public Animator animator;
     // Awake is called after all objects are initialized. Called in a random order.
     private void Awake()
     {
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        animator.SetFloat("Speed", Mathf.Abs(moveDirection));// makes the animation true
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
         if(isJumping)
         {
@@ -80,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         {
             FlipCharacter();
         }
+        
     }
 
     private void ProcessInputs()
