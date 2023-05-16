@@ -16,11 +16,7 @@ public class bulletDestroy : MonoBehaviour
             enemyComponent.TakeDamage(1);
 
         }
-<<<<<<< Updated upstream
         else if (collision.gameObject.TryGetComponent<BossBehavior>(out BossBehavior bossComponent))
-=======
-        else if(collision.gameObject.TryGetComponent<BossBehavior>(out BossBehavior bossComponent))
->>>>>>> Stashed changes
         {
             bossComponent.TakeDamage(1);
         }
