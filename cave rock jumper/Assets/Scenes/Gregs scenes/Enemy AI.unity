@@ -573,13 +573,9 @@ PrefabInstance:
       value: MC
       objectReference: {fileID: 0}
     - target: {fileID: 4570412544631840911, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1892513191}
-    - target: {fileID: 4570412544631840911, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
       propertyPath: groundCheck
       value: 
-      objectReference: {fileID: 1644302025}
+      objectReference: {fileID: 380533094}
     - target: {fileID: 7787835938927053669, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
       propertyPath: maxHealth
       value: 100
@@ -590,11 +586,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
---- !u!4 &1644302025 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8187532177738728543, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
-  m_PrefabInstance: {fileID: 1256608548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1892513185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4570412544631840910, guid: e2740cf438cbaae42b3f2e3cf37a3efd, type: 3}
@@ -621,7 +612,7 @@ Animator:
   m_GameObject: {fileID: 1892513185}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d0e6c2a8126e50e4a98f59b5266bfd06, type: 2}
+  m_Controller: {fileID: 9100000, guid: aaa4498f80adb054192fabcf040cd8fc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -643,7 +634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84b122dd6574bf4f83471804a0fbf18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BulletSpawnPoint: {fileID: 2111290844}
   bullets: {fileID: 8119266599411215166, guid: 24d70157f753f0646aba2e5841819609, type: 3}
+  bulletSpeed: 10
 --- !u!1 &1952768900
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2232e8f40fd8d8e419391d2cd42940f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 1952768906}
+  hit: {fileID: 0}
   currenthealth: {fileID: 1892513186}
   damage: 10
 --- !u!114 &1952768906
@@ -818,7 +811,7 @@ GameObject:
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -965,4 +958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84b122dd6574bf4f83471804a0fbf18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BulletSpawnPoint: {fileID: 2111290844}
   bullets: {fileID: 8119266599411215166, guid: 24d70157f753f0646aba2e5841819609, type: 3}
+  bulletSpeed: 10
