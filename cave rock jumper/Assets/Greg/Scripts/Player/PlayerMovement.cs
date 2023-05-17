@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumpCount;
 
     private Rigidbody2D rb;
-    private bool facingRight = true;
+    private bool facingRight = false;
     private float moveDirection;
     private bool isJumping = false;
     private bool isGrounded;
@@ -51,8 +51,9 @@ public class PlayerMovement : MonoBehaviour
         //check if grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, groundObjects);
         
-        if(isGrounded)
+        if(isGrounded && !isJumping)
         {
+            animator.SetBool("IsJumping", false);
             jumpCount = maxJumpCount;
         }
         //move
@@ -63,12 +64,15 @@ public class PlayerMovement : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(moveDirection));// makes the animation true
         rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
+
         if(isJumping)
         {
+            animator.SetBool("IsJumping", true);
             rb.AddForce(new Vector2(0f, jumpForce));
             jumpCount--;
         }
         isJumping = false;
+        
     }
 
     private void Animate()

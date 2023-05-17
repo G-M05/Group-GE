@@ -111,7 +111,7 @@ public class BossBehavior : MonoBehaviour
     }
 
     // if tag "player" is being used and an attack hits it will deal damage
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
