@@ -308,11 +308,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7547398194940958808, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.35
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 7547398194940958808, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.76
+      value: -3.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398194940958809, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 7547398194940958814, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
       propertyPath: m_Sprite
@@ -361,6 +397,10 @@ PrefabInstance:
     - target: {fileID: 7547398196034832028, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7547398196034832029, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
+      propertyPath: speed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7547398196034832031, guid: 6dfb8fd114a625d4db9981ed2b9910ab, type: 3}
       propertyPath: m_Name
@@ -466,7 +506,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 15.247
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
