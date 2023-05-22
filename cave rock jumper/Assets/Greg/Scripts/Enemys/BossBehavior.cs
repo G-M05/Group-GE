@@ -67,6 +67,7 @@ public class BossBehavior : MonoBehaviour
             phase3 = false;
             isDead = true;
             Debug.Log("isDead");
+            Destroy(gameObject);
         }
         timer = Time.deltaTime;
     }

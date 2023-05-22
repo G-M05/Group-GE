@@ -6,13 +6,23 @@ using UnityEngine;
 public class bulletDestroy : MonoBehaviour
 {
     public float bulletSpeed;
+    public Rigidbody2D rb;
+    public LineRenderer lineRenderer;
+    
+
+    void Start()
+    {
+        rb.velocity = transform.right * bulletSpeed;
+    }
+
+
     private void FixedUpdate()
     {
         gameObject.GetComponent<Rigidbody2D>().AddForce(gameObject.transform.forward * bulletSpeed, 0);
     }
 
     //checks to see if bullet colides with something if it does the bullet gets destroyed
-    private void OnTriggerEnter2D(Collider2D collision)
+     void OnTriggerEnter2D(Collider2D collision)
     {
 
         // Enemies to take damage
@@ -20,7 +30,7 @@ public class bulletDestroy : MonoBehaviour
         {
 
             enemyComponent.TakeDamage(1);
-
+           
         }
         else if (collision.gameObject.TryGetComponent<BossBehavior>(out BossBehavior bossComponent))
         {
