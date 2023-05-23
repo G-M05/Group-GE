@@ -5,23 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private bool IsInteracting = false;
-    private void Start()
+    private bool inRange = false;
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            IsInteracting = true;
-        }
-        else {
-            IsInteracting = false;
+        if (Input.GetKeyDown(KeyCode.E) && inRange) {
+            LoadNextScene();
         }
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (IsInteracting && collision.gameObject.CompareTag("Player")) {
-            LoadNextScene();
+        if (collision.gameObject.CompareTag("Player")) {
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            inRange = false;
         }
     }
 
